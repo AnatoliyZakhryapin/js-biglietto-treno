@@ -1,5 +1,11 @@
 # Calcolo del prezzo del biglietto del treno
 
+- Richiesta Nome
+    - Creare la variabile "passengerName"
+    - Assegnare il valore tramite prompt
+- Richiesta Cognome
+    - Creare la variabile "passengerSurname"
+    - Assegnare il valore tramite prompt
 - Richiesta della distanza del percorso
     - Creare la variabile "distanceTrip"
     - Assegnare il valore tramite prompt
@@ -30,10 +36,4 @@
 
 # Creazione biglietto
 
-- Richiesta nome
-    - Creare la variabile "distanceTrip"
-    - Assegnare il valore tramite prompt
-- Richiesta nome
-    - Creare la variabile "distanceTrip"
-    - Assegnare il valore tramite prompt
 - Pescare Dom Elementi con id e assegnare i valori di interesse
