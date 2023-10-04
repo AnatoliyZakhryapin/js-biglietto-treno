@@ -4,12 +4,12 @@
 //     - Creare la variabile "passengerName"
 let passengerName;
 //     - Assegnare il valore tramite prompt
-passengerName = prompt("Nome del passegero?");
+passengerName = prompt("Nome del passegero?").replace(/\s/g, '');;
 // - Richiesta Cognome
 //     - Creare la variabile "passengerSurname"
 let passengerSurname;
 //     - Assegnare il valore tramite prompt
-passengerSurname = prompt("Cognome del passegero?")
+passengerSurname = prompt("Cognome del passegero?").replace(/\s/g, '');
 // - Richiesta della distanza del percorso
 //     - Creare la variabile "distanceTrip"
 let distanceTrip;
