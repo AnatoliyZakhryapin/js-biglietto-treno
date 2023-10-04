@@ -24,6 +24,6 @@
         ALTRIMENTI () 
             - passengerDiscountEntity = discountNot
     - Creare la variabile "dicountPassenger"
-        - discountPassenger = priceBasic * passengerDiscountEntity / 100
+        - discountPassenger = priceBasic * passengerDiscountEntity
     - Creare la variabile "totalPrice"
         - totalPrice = priceBasic - discountPassenger
