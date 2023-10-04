@@ -27,3 +27,13 @@
         - discountPassenger = priceBasic * passengerDiscountEntity
     - Creare la variabile "totalPrice"
         - totalPrice = priceBasic - discountPassenger
+
+# Creazione biglietto
+
+- Richiesta nome
+    - Creare la variabile "distanceTrip"
+    - Assegnare il valore tramite prompt
+- Richiesta nome
+    - Creare la variabile "distanceTrip"
+    - Assegnare il valore tramite prompt
+- Pescare Dom Elementi con id e assegnare i valori di interesse
