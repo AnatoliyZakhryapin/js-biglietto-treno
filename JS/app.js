@@ -55,4 +55,7 @@ let discountPassenger;
 discountPassenger = priceBasic * passengerDiscountEntity;
 console.log("Sconto in euro del passegero", discountPassenger);
 //     - Creare la variabile "totalPrice"
+let totalPrice;
 //         - totalPrice = priceBasic - discountPassenger
+totalPrice = priceBasic - discountPassenger;
+console.log("Prezzo finale da pagare", totalPrice);
