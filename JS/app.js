@@ -17,7 +17,7 @@ let distanceTrip;
 distanceTrip = prompt("Inserisci la distanza del viaggio");
 console.log ("Distanza viaggio", typeof distanceTrip, distanceTrip);
 //     - Trasformare il valore dalla stringa in numero con decimali (evitando anche Erorre del inserimento con la virgola)
-distanceTrip = parseFloat(distanceTrip.replace(/,/g, "."));
+distanceTrip = parseFloat(distanceTrip.replace(/,/g, ".")).toFixed(2);
 console.log ("Distanza viaggio", typeof distanceTrip, distanceTrip);
 // - Richiesta dell'età 
 //     - Creare la variabile "passengerAge"
@@ -41,7 +41,7 @@ const discountNot = 0;
 let priceBasic;
 //     - Calcolare il prezzo base 
 //         priceBasic = distanceTrip * priceKm
-priceBasic = distanceTrip * priceKM; 
+priceBasic = (distanceTrip * priceKM).toFixed(2); 
 console.log("Prezzo basse del viaggio", priceBasic);
 //     - Creare la variabile "passengerDiscountEntity"
 let passengerDiscountEntity;
@@ -70,7 +70,7 @@ console.log("Sconto in euro del passegero", discountPassenger);
 //     - Creare la variabile "totalPrice"
 let totalPrice;
 //         - totalPrice = priceBasic - discountPassenger
-totalPrice = priceBasic - discountPassenger;
+totalPrice = (priceBasic - discountPassenger).toFixed(2);
 console.log("Prezzo finale da pagare", totalPrice);
 
 
