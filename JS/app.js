@@ -1,5 +1,15 @@
 // # Calcolo del prezzo del biglietto del treno
 
+// - Richiesta nome
+//     - Creare la variabile "passengerName"
+let passengerName;
+//     - Assegnare il valore tramite prompt
+passengerName = prompt("Nome del passegero?");
+// - Richiesta Cognome
+//     - Creare la variabile "passengerSurname"
+let passengerSurname;
+//     - Assegnare il valore tramite prompt
+passengerSurname = prompt("Cognome del passegero?")
 // - Richiesta della distanza del percorso
 //     - Creare la variabile "distanceTrip"
 let distanceTrip;
@@ -43,10 +53,13 @@ let passengerDiscountEntity;
 //             - passengerDiscountEntity = discountNot
     if (passengerAge < 18) {
         passengerDiscountEntity = discountUnder18; 
+        var categoryDiscount = "discountUnder18";
     } else if (passengerAge > 65) {
         passengerDiscountEntity = discountOver65; 
+        var categoryDiscount = "discountUnder65";
     } else {
         passengerDiscountEntity = discountNot;
+        var categoryDiscount = "discountNot";
     }
 console.log("Sconto % passegero", passengerDiscountEntity);
 //     - Creare la variabile "dicountPassenger"
@@ -59,3 +72,15 @@ let totalPrice;
 //         - totalPrice = priceBasic - discountPassenger
 totalPrice = priceBasic - discountPassenger;
 console.log("Prezzo finale da pagare", totalPrice);
+
+
+// # Creazione biglietto 
+// - Pescare Dom Elementi con id e assegnare i valori di interesse
+document.getElementById("passengerName").innerHTML = passengerName;
+document.getElementById("passengerSurname").innerHTML = passengerSurname;
+document.getElementById("passengerAge").innerHTML = passengerAge;
+document.getElementById("distanceTrip").innerHTML = distanceTrip;
+document.getElementById("categoryDiscount").innerHTML = categoryDiscount;
+document.getElementById("discount").innerHTML = passengerDiscountEntity * 100;
+document.getElementById("priceBasic").innerHTML = priceBasic;
+document.getElementById("totalPrice").innerHTML = totalPrice;

@@ -3,12 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>js-biglietto-treno</title>
 </head>
 <body>
 
+    <div class="conteiner p-5">
+        <div class="row justify-content-center flex-column align-items-center">
+            <div class="col-auto">
+                <h1>Questo è il tuo biglieto del trenno</h1>
+                <div class="card">
+                    <img class="position-relative" src="./img/biglietto-del-treno-su-sfondo-bianco-2cfxbne.jpg" alt="">
+                    <div class="card-body position-absolute w-75" style="font-size: 12px; top: 23%; left: 5%;">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th class="bg-transparent" scope="col">Nome</th>
+                                <th class="bg-transparent" scope="col">Cognome</th>
+                                <th class="bg-transparent" scope="col">Eta</th>
+                                <th class="bg-transparent" scope="col">Distanza</th>
+                                <th class="bg-transparent" scope="col">Tipo di sconto</th>
+                                <th class="bg-transparent" scope="col">Sconto</th>
+                                <th class="bg-transparent" scope="col">Prezzo base</th>
+                                <th class="bg-transparent" scope="col">Prezzo totale</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="bg-transparent" id="passengerName">Nome</td>
+                                <td class="bg-transparent" id="passengerSurname">Cognome</td>
+                                <td class="bg-transparent"><span class="pe-1" id="passengerAge">20</span>Anni</td>
+                                <td class="bg-transparent"><p><span class="pe-1" id="distanceTrip">20</span>km</p></td>
+                                <td class="bg-transparent" id="categoryDiscount">under</td>
+                                <td class="bg-transparent"><p><span class="pe-1" id="discount">20</span>%</p></td>
+                                <td class="bg-transparent"><p><span class="pe-1" id="priceBasic">20</span>Euro</p></td>
+                                <td class="bg-transparent"><p><span class="pe-1" id="totalPrice">20</span>Euro</p></td>
+                              </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+               
+            </div>
+        </div>
+    </div>
     
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="./JS/app.js"></script>
 </body>
 </html>
