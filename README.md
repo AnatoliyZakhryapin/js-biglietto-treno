@@ -3,7 +3,7 @@
 - Richiesta della distanza del percorso
     - Creare la variabile "distanceTrip"
     - Assegnare il valore tramite prompt
-    - Trasformare il valore dalla stringa in numero con decimali
+    - Trasformare il valore dalla stringa in numero con decimali (evitando anche Erorre del inserimento con la virgola)
 - Richiesta dell'età 
     - Creare la variabile "passengerAge" 
     - Assegnare il valore tramite prompt
