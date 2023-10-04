@@ -7,6 +7,7 @@
 - Richiesta dell'età 
     - Creare la variabile "passengerAge" 
     - Assegnare il valore tramite prompt
+    - Trasformare il valore dalla stringa in numero con decimali
 - Calcolo del prezzo totale del viaggio
     - Creare la variabile "priceKM" con valore 0.21 (valore euro per km)
     - Creare la variabile "discountUnder18" 20% in decimali
