@@ -7,38 +7,42 @@ const distanceTrip = Number(parseFloat(prompt("Inserisci la distanza del viaggio
 const passengerAge = parseInt(prompt("Inserisci l'età").replace(/\s/g, ''));
 
 // - Controllo corretto inserimento dei dati
-const pNode = document.getElementById("alert");
+const alertDOMElement = document.getElementById("alert");
 
 if (passengerName === "") {
     var passengerNameUndefined = "Inserisci il nome"
-    pNode.appendChild(document.createTextNode(passengerNameUndefined + "." + " "));
+    // pNode.appendChild(document.createTextNode(passengerNameUndefined + "." + " "));
+    alertDOMElement.innerHTML += "<h1>" + passengerNameUndefined + "</h1>"
     console.log("nome non inserito", typeof passengerNameUndefined)
 }
 
 if (passengerSurname === "") {
     var passengerSurnameUndefined = "Inserisci il cognome"
-    pNode.appendChild(document.createTextNode(passengerSurnameUndefined + "." + " "));
+    // pNode.appendChild(document.createTextNode(passengerSurnameUndefined + "." + " "));
+    alertDOMElement.innerHTML += "<h1>" + passengerSurnameUndefined + "</h1>"
     console.log("Cognome non inserito", typeof passengerSurnameUndefined)
 }
 
 if (isNaN(distanceTrip)) {
     var distanceTripNull = "Inserisci la distanza"
-    pNode.appendChild(document.createTextNode(distanceTripNull + "." + " "));
+    // pNode.appendChild(document.createTextNode(distanceTripNull + "." + " "));
+    alertDOMElement.innerHTML += "<h1>" + distanceTripNull + "</h1>"
     console.log("Distanza non inserita")
 }
 
 if (isNaN(passengerAge)) {
     var passengerAgepNull = "Inserisci l'eta'"
-    pNode.appendChild(document.createTextNode(passengerAgepNull + "." + " "));
+    // pNode.appendChild(document.createTextNode(passengerAgepNull + "." + " "));
+    alertDOMElement.innerHTML += "<h1>" + passengerAgepNull + "</h1>"
     console.log("Eta non inserita")
 }
 
 if (typeof passengerNameUndefined === 'string' || typeof passengerSurnameUndefined === 'string' || typeof distanceTripNull === 'string' || typeof passengerAgepNull === 'string') {
     alert("I dati non sono inserite correttamente!")
-    document.getElementById("h1").className = "d-none";
-    document.getElementById("card").className = "d-none";
+    document.getElementById("alert").classList.remove ("d-none");
 } else {
-    document.getElementById("alert").className = "d-none";
+    document.getElementById("h1").classList.remove ("d-none");
+    document.getElementById("card").classList.remove ("d-none");
 }
 
 // - Calcolo del prezzo totale del viaggio
