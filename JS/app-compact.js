@@ -7,7 +7,39 @@ const distanceTrip = Number(parseFloat(prompt("Inserisci la distanza del viaggio
 const passengerAge = parseInt(prompt("Inserisci l'età").replace(/\s/g, ''));
 
 // - Controllo corretto inserimento dei dati
+const pNode = document.getElementById("alert");
 
+if (passengerName === "") {
+    var passengerNameUndefined = "Inserisci il nome"
+    pNode.appendChild(document.createTextNode(passengerNameUndefined + "." + " "));
+    console.log("nome non inserito", typeof passengerNameUndefined)
+}
+
+if (passengerSurname === "") {
+    var passengerSurnameUndefined = "Inserisci il cognome"
+    pNode.appendChild(document.createTextNode(passengerSurnameUndefined + "." + " "));
+    console.log("Cognome non inserito", typeof passengerSurnameUndefined)
+}
+
+if (isNaN(distanceTrip)) {
+    var distanceTripNull = "Inserisci la distanza"
+    pNode.appendChild(document.createTextNode(distanceTripNull + "." + " "));
+    console.log("Distanza non inserita")
+}
+
+if (isNaN(passengerAge)) {
+    var passengerAgepNull = "Inserisci l'eta'"
+    pNode.appendChild(document.createTextNode(passengerAgepNull + "." + " "));
+    console.log("Eta non inserita")
+}
+
+if (typeof passengerNameUndefined === 'string' || typeof passengerSurnameUndefined === 'string' || typeof distanceTripNull === 'string' || typeof passengerAgepNull === 'string') {
+    alert("I dati non sono inserite correttamente!")
+    document.getElementById("h1").className = "d-none";
+    document.getElementById("card").className = "d-none";
+} else {
+    document.getElementById("alert").className = "d-none";
+}
 
 // - Calcolo del prezzo totale del viaggio
 //     - Dati fissi
