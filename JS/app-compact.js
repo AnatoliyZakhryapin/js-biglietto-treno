@@ -6,6 +6,9 @@ const passengerSurname = prompt("Cognome del passegero?").replace(/\s/g, '');
 const distanceTrip = Number(parseFloat(prompt("Inserisci la distanza del viaggio").replace(/,/g, ".").replace(/\s/g, '')).toFixed(2));
 const passengerAge = parseInt(prompt("Inserisci l'età").replace(/\s/g, ''));
 
+// - Controllo corretto inserimento dei dati
+
+
 // - Calcolo del prezzo totale del viaggio
 //     - Dati fissi
 const priceKM = 0.21;
@@ -35,6 +38,7 @@ const totalPrice = Number((priceBasic - discountPassenger).toFixed(2));
 
 // # Creazione biglietto 
 // - Pescare Dom Elementi con id e assegnare i valori di interesse
+
 document.getElementById("passengerName").innerHTML = passengerName;
 document.getElementById("passengerSurname").innerHTML = passengerSurname;
 document.getElementById("passengerAge").innerHTML = passengerAge;
