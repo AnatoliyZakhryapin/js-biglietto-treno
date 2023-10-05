@@ -3,8 +3,8 @@
 // - Racolta dei dati di ingresso 
 const passengerName = prompt("Nome del passegero?").replace(/\s/g, '');
 const passengerSurname = prompt("Cognome del passegero?").replace(/\s/g, '');
-const distanceTrip = Number(parseFloat(prompt("Inserisci la distanza del viaggio").replace(/,/g, ".")).toFixed(2));
-const passengerAge = parseInt(prompt("Inserisci l'età"));
+const distanceTrip = Number(parseFloat(prompt("Inserisci la distanza del viaggio").replace(/,/g, ".").replace(/\s/g, '')).toFixed(2));
+const passengerAge = parseInt(prompt("Inserisci l'età").replace(/\s/g, ''));
 
 // - Calcolo del prezzo totale del viaggio
 //     - Dati fissi
